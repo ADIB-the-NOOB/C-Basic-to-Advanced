@@ -4,6 +4,11 @@
 
 class Program
 {
+    static void Booleans()
+    {
+        bool b = true;
+        
+    }
     static void Interactive()
     {
         Console.WriteLine("Please tell me your FirstName:");
