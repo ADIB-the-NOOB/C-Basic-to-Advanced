@@ -6,9 +6,14 @@ class Program
 {
     static void Interactive()
     {
-        Console.WriteLine("Please tell me your name:");
+        Console.WriteLine("Please tell me your FirstName:");
         string userName = Console.ReadLine();
-        Console.WriteLine("Hello " + userName);
+
+        Console.WriteLine("LastName :");
+        string lastName = Console.ReadLine();
+
+        // Console.WriteLine("Hello " + userName);
+        Console.WriteLine("Hello, {0} {1}", userName, lastName);
     }
 
     static void Main1()
