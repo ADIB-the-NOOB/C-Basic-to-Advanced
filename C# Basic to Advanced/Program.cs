@@ -4,11 +4,19 @@
 
 class Program
 {
-    static void Booleans()
+    /* 
+    static void DataTypes()
     {
-        bool b = true;
-        
+        // Console.WriteLine("min = {0}, max = {1}", int.MinValue, int.MaxValue);
+        string name = "C:\\Name\\Helo";
+        Console.WriteLine(name);
+
+        // for Double back slash with my string
+        string newName = @"C:\\Name\\Helo";
+        // if someone want to treat Escape sequences like Normal Sequence then use @
+        Console.WriteLine(newName);
     }
+    
     static void Interactive()
     {
         Console.WriteLine("Please tell me your FirstName:");
@@ -20,18 +28,27 @@ class Program
         // Console.WriteLine("Hello " + userName);
         Console.WriteLine("Hello, {0} {1}", userName, lastName);
     }
-
-    static void Main1()
-    {
-        Console.WriteLine("this is executing from Main1 function");
-    }
+    */
 
     static void Main()
         // Main() method is the entry point of the Program.
     {
-        Console.WriteLine("This is me who is a Noob Pythonista");
+        // Console.WriteLine("This is me who is a Noob Pythonista");
         // we also can use System.Console.WriteLine if we don't use namespace declaration - "using System"
-        Main1();
-        Interactive();
+        // Main1();
+        // Interactive();
+        // DataTypes();
+
+        int number1 = 23;
+        int number2 = 34;
+        
+        if (number1 == number2)
+        {
+            Console.WriteLine("number1 is equal to number2");
+        }
+        else
+        {
+            Console.WriteLine("it's not!");
+        }
     }
 }
