@@ -39,6 +39,7 @@ class Program
         // Interactive();
         // DataTypes();
 
+        /*
         int number1 = 23;
         int number2 = 34;
         
@@ -50,5 +51,27 @@ class Program
         {
             Console.WriteLine("it's not!");
         }
+        */
+
+        
+        /*
+        bool isNumber10;
+
+        if (number == 10)
+        {
+            isNumber10 = true;
+            Console.WriteLine(isNumber10);
+        }
+        else
+        {
+            isNumber10 = false;
+            Console.WriteLine(isNumber10);
+        }
+        */
+
+        int number = 10;
+        bool isNumber10 = number == 10 ? true : false;
+        Console.WriteLine("Number is {0}, and it's {1}", number, isNumber10);
+        // Using Ternary Operator
     }
 }
