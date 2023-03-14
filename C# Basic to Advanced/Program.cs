@@ -31,7 +31,7 @@ class Program
     */
 
     static void Main()
-        // Main() method is the entry point of the Program.
+    // Main() method is the entry point of the Program.
     {
         // Console.WriteLine("This is me who is a Noob Pythonista");
         // we also can use System.Console.WriteLine if we don't use namespace declaration - "using System"
@@ -53,7 +53,7 @@ class Program
         }
         */
 
-        
+
         /*
         bool isNumber10;
 
@@ -69,9 +69,43 @@ class Program
         }
         */
 
-        int number = 10;
-        bool isNumber10 = number == 10 ? true : false;
-        Console.WriteLine("Number is {0}, and it's {1}", number, isNumber10);
+        // int number = 10;
+        // bool isNumber10 = number == 10 ? true : false;
+        // Console.WriteLine("Number is {0}, and it's {1}", number, isNumber10);
         // Using Ternary Operator
+
+        // bool? areYouMajor = null;
+
+        /*
+        if (areYouMajor == true)
+        {
+            Console.WriteLine("User is Major");
+        }
+        else if (areYouMajor == false)
+        {
+            Console.WriteLine("User is not Major");
+        }
+        else
+        {
+            Console.WriteLine("User Did not answered the Question");
+        }
+        */
+
+        int? TicketOnSale = null;
+        int AvailableTickets = TicketOnSale ?? 0;
+
+        Console.WriteLine("Available ticket - {0}", AvailableTickets);
+
+        /*
+        if (TicketOnSale == null)
+        {
+            TicketOnSale = 0;
+            Console.WriteLine("Avaiable Tickets - {0}, TicketOnSale - {1}", AvailableTickets, TicketOnSale);
+        }
+        else
+        {
+            AvailableTickets = (int)TicketOnSale;
+            Console.WriteLine("Avaiable Tickets - {0}, TicketOnSale - {1}", AvailableTickets, TicketOnSale);
+        }*/
     }
 }
