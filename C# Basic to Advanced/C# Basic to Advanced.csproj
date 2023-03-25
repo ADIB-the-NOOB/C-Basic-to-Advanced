@@ -6,4 +6,8 @@
     <RootNamespace>C__Basic_to_Advanced</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Jiraffe.cs" />
+  </ItemGroup>
+
 </Project>
