@@ -8,6 +8,7 @@ class Program
     {
         sayHi("adib", 12, "CZS");
         Console.WriteLine(cube(2));
+        Console.WriteLine(GetMax(2, 4));
     }
     static void sayHi(string name, int age, string school)
     {
@@ -21,5 +22,15 @@ class Program
         int result = num * num * num;
         return result;
     }
-
+    static int GetMax(int num1, int num2)
+    {
+        if (num1 > num2)
+        {
+            return num1;
+        }
+        else
+        {
+            return num2;
+        }
+    }
 }
