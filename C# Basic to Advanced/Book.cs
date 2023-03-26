@@ -1,7 +1,10 @@
-namespace C__Basic_to_Advanced
+namespace OOP
 {
     public class Book
     {
+        public string title;
+        public string author;
+        public string price;
         
     }
 }
