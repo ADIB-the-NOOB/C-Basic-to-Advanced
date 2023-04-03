@@ -1,33 +1,40 @@
 ﻿using System;
-using OOP;
 
-// System all the collections of classes like - Console
-// This namespace is a collection of - Interfaces, Structs, enum and Delegates
-
-class Program
+namespace TypeConversion
 {
-    static void Main(string[] args)
+    class Program
     {
-        string secretWord = "Adib";
-        string guess = "";
-        int guessCount = 0;
-        int guessLimit = 3; 
-        bool outOfGuesses = false;
-
-        while (secretWord != guess && !outOfGuesses)
+        public class Person
         {
-            if (guessCount < guessLimit)
+            public string Name;
+            
+            public void Introduce(string to)
             {
-                Console.Write("Enter your guess: ");
-                guess = Console.ReadLine();
-                guessCount++;
+                Console.WriteLine("Hello,{0}..I am {1}",to, Name);
             }
-            else
+            public static Person Parse(string str)
             {
-                outOfGuesses = true;
-                Console.WriteLine("You cann't guess anymore");
-            }   
+                var person = new Person();
+                person.Name = str;
+                return person;
+            }
         }
-        Console.WriteLine("You Won");
+
+        static void Main(string[] args)
+        {
+            /*
+            try
+            {
+                int a = 1;
+                int b = ++a;
+                Console.WriteLine(b);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Somethings Went Wrong!!");
+            } */
+            var person = Person.Parse("adib");
+            person.Introduce("Alex");
+        }
     }
 }
